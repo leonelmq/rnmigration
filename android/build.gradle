@@ -6,15 +6,27 @@ buildscript {
         targetSdkVersion = 35
         ndkVersion = "27.1.12297006"
         kotlinVersion = "2.1.20"
+        googlePlayServicesVersion = "+"
+        firebaseMessagingVersion = "21.1.0"
     }
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
+        jcenter { url "https://jcenter.bintray.com/"}
+        maven {
+            url "https://maven.google.com"
+            url "https://s3-us-west-2.amazonaws.com/si-mobile-sdks/android/"
+        }
+        maven { url "https://jitpack.io" }
     }
     dependencies {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath("com.google.gms:google-services:4.3.15")
+        classpath("com.google.firebase:firebase-crashlytics-gradle:2.9.2")
+        classpath("com.google.firebase:perf-plugin:1.4.1")
     }
 }
 

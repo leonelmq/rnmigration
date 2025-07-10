@@ -2,5 +2,17 @@ pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
 plugins { id("com.facebook.react.settings") }
 extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
 rootProject.name = 'AwesomeProject'
+include ':react-native-exit-app'
+project(':react-native-exit-app').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exit-app/android')
+include ':@adobe_react-native-acpaudience'
+project(':@adobe_react-native-acpaudience').projectDir = new File(rootProject.projectDir, '../node_modules/@adobe/react-native-acpaudience/android')
+include ':@adobe_react-native-acpcore'
+project(':@adobe_react-native-acpcore').projectDir = new File(rootProject.projectDir, '../node_modules/@adobe/react-native-acpcore/android')
+include ':react-native-config'
+project(':react-native-config').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-config/android')
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
+include ':react-native-file-viewer'
+project(':react-native-file-viewer').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-file-viewer/android')
+
+

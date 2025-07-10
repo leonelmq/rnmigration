@@ -1,3 +1,55 @@
 {
-  "extends": "@react-native/typescript-config"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "composite": false,
+    "isolatedModules": false,
+    "resolveJsonModule": true,
+    "strictNullChecks": false,
+    "types": ["node"],
+    "noImplicitUseStrict": false,
+    "noImplicitAny": false,
+    "jsx": "react-native",
+    "lib": ["es2019", "es6", "ES2021.String"],
+    "moduleResolution": "node",
+    "strict": true,
+    "noEmit": false,
+    "target": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@authScreens/*": ["./src/app/screens/*"],
+      "@components/*": ["src/app/components/*"],
+      "@config/*": ["src/config/*"],
+      "@constants/*": ["src/constants/*"],
+      "@hooks/*": ["src/app/hooks/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@navigationHelper": ["src/app/components/AppNavigator/helper.ts"],
+      "@redux/*": ["src/redux/*"],
+      "@screens/*": ["./src/app/screens/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@assets/*": ["src/app/assets/*"]
+    },
+    "skipLibCheck": true
+  },
+  "include": ["index.d.ts", "src/**/*"],
+  "exclude": [
+    ".history",
+    "node_modules",
+    "**/node_modules/*",
+    "lib",
+    "dist",
+    "build",
+    "coverage",
+    "android",
+    "ios",
+    "e2e",
+    "jest.config.js",
+    "jest.setup.js",
+    "metro.config.js",
+    "babel.config.js"
+  ]
 }

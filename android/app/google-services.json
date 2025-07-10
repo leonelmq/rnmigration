@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1023191037782",
+    "firebase_url": "https://galicia-app-mayorista-homo.firebaseio.com",
+    "project_id": "galicia-app-mayorista-homo",
+    "storage_bucket": "galicia-app-mayorista-homo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023191037782:android:90339f10389f399b7a48f7",
+        "android_client_info": {
+          "package_name": "com.awesomeproject.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023191037782-ftmloo05ageneiqpf3f8pcip3ttg0vls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQN4IVMIDUL0Jxe6UqKqTKxnao5Madjwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023191037782-ftmloo05ageneiqpf3f8pcip3ttg0vls.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1023191037782-mnmm8tlql98purm1q6lqpph26ukt8bq0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ar.com.bgba.officetoken",
+                "app_store_id": "1101862517"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

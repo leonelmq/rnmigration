@@ -1,0 +1,24 @@
+{
+  "react-native": {
+    "crashlytics_debug_enabled": true,
+    "crashlytics_ndk_enabled": true,
+    "crashlytics_auto_collection_enabled": true,
+    "app_check_token_auto_refresh": true,
+    "android_task_executor_maximum_pool_size": 10,
+    "android_task_executor_keep_alive_seconds": 3,
+    "crashlytics_is_error_generation_on_js_crash_enabled": true,
+    "crashlytics_javascript_exception_handler_chaining_enabled": true,
+    "perf_auto_collection_enabled": true,
+    "messaging_ios_foreground_presentation_options": [
+      "badge",
+      "sound",
+      "list",
+      "banner"
+    ],
+    "analytics_auto_collection_enabled": true,
+    "messaging_auto_init_enabled": true,
+    "in_app_messaging_auto_collection_enabled": true,
+    "app_log_level": "debug",
+    "app_data_collection_default_enabled": true
+  }
+}
